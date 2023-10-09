@@ -1,0 +1,60 @@
+.propiedades {
+
+    .after-line:not(:last-child) {
+        
+        h1 {
+            position: relative;
+    
+            span:first-child {
+                background-color: $light;
+                z-index: 1;
+            }
+            
+            &:after {
+                content: '';
+                width: -webkit-fill-available;
+                height: 1px;
+                position: absolute;
+                right: 0;
+                top: 50%;
+                background-color: $light2;
+            }
+        
+            &:before {
+                content: '';
+                width: 6px;
+                height: 6px;
+                aspect-ratio: 1;
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                background-color: $light2;
+            }
+        }
+    }
+
+    .slide-image-column {
+        
+        .slide-image {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            margin: 0 auto;
+            display: block;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .propiedades {
+        .slide-image-column {
+            padding-bottom: 0px;
+
+            .slide-image {
+                position: relative;
+                width: 80%;
+            }
+        }
+    }
+}
