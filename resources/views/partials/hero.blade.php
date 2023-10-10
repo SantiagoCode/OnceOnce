@@ -1,4 +1,4 @@
-<div data-cursor="-inverse" class="hero is-fullheight is-relative" style="background-image: url('@asset("images/hero-bg.png")')">
+<div data-cursor="-inverse" class="hero is-fullheight is-relative" style="background-image: url({!!get_field('hero-bg', 'options')!!})">
   <div class="radial-screen"></div>
   <div class="hero-body is-flex is-flex-direction-column is-align-items-flex-start is-justify-content-flex-end">
     <div class="has-padding-left-30 has-margin-bottom-120 has-padding-right-30">
@@ -6,9 +6,9 @@
         <div class="column is-8 is-10-touch">
           <h1 class="title is-size-1 has-text-white">
             <div data-inertia data-inertia-reveal data-inertia-delay="400">
-              <span>Donde los sueños</span>
-              <span>se encuentran con</span>
-              <span>la realidad</span>
+              <span>{!!get_field('hero-1', 'options')!!}</span>
+              <span>{!!get_field('hero-2', 'options')!!}</span>
+              <span>{!!get_field('hero-3', 'options')!!}</span>
             </div>
           </h1>
         </div>
